@@ -6,8 +6,9 @@
 
 ## 📸 Preview
 
-![Home Page Preview](./firstpage.png)
-![Cart Preview](./firstpage2.png)
+![Home Page Preview](./shopnow.png)
+![Home Page Preview](./firstpage2.png)
+![Cart Preview](./cart.png)
 
 ---
 
