@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zech Lifestyle - Premium Fashion</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Zech Lifestyle</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="dropdown">
+                    <a href="products.html" class="nav-link">Products <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="products.html?category=men">Men</a>
+                        <a href="products.html?category=women">Women</a>
+                        <a href="products.html?category=boys">Boys</a>
+                        <a href="products.html?category=girls">Girls</a>
+                        <a href="products.html?category=babies">Babies</a>
+                    </div>
+                </li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="wishlist.html" class="nav-link">Wishlist <span id="wishlist-count" class="count">0</span></a></li>
+                <li><a href="#" class="nav-link cart-link">Cart <span id="cart-count" class="count">0</span></a></li>
+            </ul>
+            <div class="language-switcher">
+                <div id="google_translate_element"></div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <img src="src/assets/me.jpg" /> >
+                <div class="slide-content">
+                    <h1 class="animate-text">Welcome to Zech Lifestyle</h1>
+                    <p class="animate-text delay-1">Discover Premium Fashion for Every Style</p>
+                    <a href="products.html" class="cta-button animate-text delay-2">Shop Now</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Men's Collection">
+                <div class="slide-content">
+                    <h1 class="animate-text">Men's Collection</h1>
+                    <p class="animate-text delay-1">Sophisticated Styles for Modern Men</p>
+                    <a href="products.html?category=men" class="cta-button animate-text delay-2">Explore Men's</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.pexels.com/photos/1038000/pexels-photo-1038000.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Women's Collection">
+                <div class="slide-content">
+                    <h1 class="animate-text">Women's Collection</h1>
+                    <p class="animate-text delay-1">Elegant Fashion for Every Occasion</p>
+                    <a href="products.html?category=women" class="cta-button animate-text delay-2">Explore Women's</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="men">
+                    <img src="src/assets/Tshirtman.jpg" alt="Men" />
+                    <div class="category-overlay">
+                        <h3>Men</h3>
+                        <p>Sophisticated Styles</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="women">
+                    <img src="src/assets/women.jpg" alt="Women" />
+                    <div class="category-overlay">
+                        <h3>Women</h3>
+                        <p>Elegant Fashion</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="babies">
+                    <img src="src/assets/kid1.jpg"  alt="Babies">
+                    <div class="category-overlay">
+                        <h3>Babies</h3>
+                        <p>Adorable Comfort</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="bag">
+                    <img src="src/assets/bag.jpg" alt="Bag">
+                    <div class="category-overlay">
+                        <h3>Bag</h3>
+                        <p>Trendy Outfits</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="Hat">
+                    <img src="src/assets/hat1.jpg" alt="Hat" />
+                    <div class="category-overlay">
+                        <h3>Hat</h3>
+                        <p>Cute & Stylish</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="Shoes">
+                    <img src="src/assets/shoesman2.jpg"  alt="Shoes">
+                    <div class="category-overlay">
+                        <h3>Shoes</h3>
+                        <p>Adorable Comfort</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="Watch">
+                    <img src="src/assets/watch.jpg"  alt="Watch">
+                    <div class="category-overlay">
+                        <h3>Watch</h3>
+                        <p>Adorable Comfort</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid" id="featured-products">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Zech Lystyle</h3>
+                    <p>Your destination for premium fashion. Quality, style, and comfort in every piece.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="products.html?category=men">Men</a></li>
+                        <li><a href="products.html?category=women">Women</a></li>
+                        <li><a href="products.html?category=boys">Boys</a></li>
+                        <li><a href="products.html?category=girls">Girls</a></li>
+                        <li><a href="products.html?category=babies">Babies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+                    <p><i class="fas fa-envelope"></i> info@zechlystyle.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Fashion St, Style City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zech Lystyle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Shopping Cart</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items"></div>
+                <div class="cart-total">
+                    <h3>Total: $<span id="cart-total">0.00</span></h3>
+                </div>
+                <div class="cart-actions">
+                    <button class="btn btn-primary" id="checkout-btn">Checkout</button>
+                    <button class="btn btn-secondary" id="clear-cart-btn">Clear Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/wishlist.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

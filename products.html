@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Zech Lifestyle</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Zech Lystyle</h2>
+            </div>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+
+            <!-- Categories Dropdown (RIGHT SIDE) -->
+            <li class="dropdown">
+                <a href="products.html" class="nav-link active">Products <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="products.html?category=men">Men</a>
+                    <a href="products.html?category=women">Women</a>
+                    <a href="products.html?category=babies">Babies</a>
+                    <a href="products.html?category=Bag">Bag</a>
+                    <a href="products.html?category=Hat">Hat</a>
+                    <a href="products.html?category=shoes">Shoes</a>
+                    <a href="products.html?category=Watch">Watch</a>
+                </div>
+            </li>
+
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="wishlist.html" class="nav-link">Favorite <span id="wishlist-count" class="count">0</span></a></li>
+            <li><a href="#" class="nav-link cart-link">Cart <span id="cart-count" class="count">0</span></a></li>
+        </ul>
+
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+            <div id="google_translate_element"></div>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+</nav>
+
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-header">
+                <h1 id="page-title">All Products</h1>
+                <div class="filters">
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="men">Men</option>
+                        <option value="women">Women</option>
+                        <option value="Babies">Babies</option>
+                        <option value="Hat">Hat</option>
+                        <option value="Bag">Bag</option>
+                        <option value="Shoes">Shoes</option>
+                        <option value="watch">watch</option>
+                    </select>
+                    <select id="type-filter">
+                        <option value="all">All Types</option>
+                        <option value="clothes">Clothes</option>
+                        <option value="shoes">Shoes</option>
+                        <option value="bags">Bags</option>
+                        <option value="hats">Hats</option>
+                    </select>
+                    <select id="sort-filter">
+                        <option value="name">Sort by Name</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Zech Lystyle</h3>
+                    <p>Your destination for premium fashion. Quality, style, and comfort in every piece.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="products.html?category=men">Men</a></li>
+                        <li><a href="products.html?category=women">Women</a></li>
+                        <li><a href="products.html?category=Babies">Babies</a></li>
+                        <li><a href="products.html?category=Hat">Hat</a></li>
+                        <li><a href="products.html?category=Bag">Bag</a></li>
+                        <li><a href="products.html?category=Shoes">Shoes</a></li>
+                        <li><a href="products.html?category=Watch">watch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +91 8980815671</p>
+                    <p><i class="fas fa-envelope"></i> zechlistyle08@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> PhnomPenh Sensok</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Zech Lifestyle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Shopping Cart</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items"></div>
+                <div class="cart-total">
+                    <h3>Total: $<span id="cart-total">0.00</span></h3>
+                </div>
+                <div class="cart-actions">
+                    <button class="btn btn-primary" id="checkout-btn">Checkout</button>
+                    <button class="btn btn-secondary" id="clear-cart-btn">Clear Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/wishlist.js"></script>
+    <script src="js/products.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
